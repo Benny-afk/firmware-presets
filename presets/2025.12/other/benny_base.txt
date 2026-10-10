@@ -25,7 +25,10 @@
 #$ DESCRIPTION: ### OSD
 #$ DESCRIPTION: Unter *Optionen* genau **eine** Variante wählen: **HD** oder **Analog**.
 #$ DESCRIPTION:
-#$ DESCRIPTION: Alle OSD-Elemente werden zurückgesetzt, dann links eingeblendet: Zellspannung, Timer, Link Quality, Gas, Distanz.
+#$ DESCRIPTION: Alle OSD-Elemente werden zurückgesetzt, dann wird das jeweilige Layout gesetzt.
+#$ DESCRIPTION:
+#$ DESCRIPTION: - **HD** (vom 2.5" HDZero-Toothpick): Zellspannung, Timer, Link Quality, Gas, Distanz – links
+#$ DESCRIPTION: - **Analog** (vom AIR65 R): Akkuspannung, Link Quality, RSSI dBm, Timer, Warnungen
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
 # Arming bis 180 Grad erlauben
@@ -159,6 +162,7 @@ set small_angle = 180
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): OSD Analog
         feature OSD
+        set osd_rssi_dbm_alarm = -99
         # alle Elemente auf Standard (ausgeblendet) zuruecksetzen
         set osd_adjustment_range_pos = 234
         set osd_ah_pos = 78
@@ -169,20 +173,11 @@ set small_angle = 180
         set osd_battery_usage_pos = 234
         set osd_camera_frame_pos = 35
         set osd_compass_bar_pos = 234
-        set osd_core_temp_pos = 234
-        set osd_craft_name_pos = 234
-        set osd_crosshairs_pos = 205
-        set osd_current_pos = 234
         set osd_debug2_pos = 234
         set osd_debug_pos = 234
-        set osd_disarmed_pos = 234
         set osd_efficiency_pos = 234
         set osd_esc_rpm_freq_pos = 234
-        set osd_esc_rpm_pos = 234
-        set osd_esc_tmp_pos = 234
-        set osd_flight_dist_pos = 234
         set osd_flip_arrow_pos = 234
-        set osd_flymode_pos = 234
         set osd_g_force_pos = 234
         set osd_gps_lap_best3_pos = 234
         set osd_gps_lap_curr_pos = 234
@@ -192,11 +187,9 @@ set small_angle = 180
         set osd_gps_sats_pos = 234
         set osd_gps_speed_pos = 234
         set osd_home_dir_pos = 234
-        set osd_home_dist_pos = 234
         set osd_lidar_dist_pos = 234
         set osd_link_tx_power_pos = 234
         set osd_log_status_pos = 234
-        set osd_mah_drawn_pos = 234
         set osd_motor_diag_pos = 234
         set osd_nheading_pos = 234
         set osd_nvario_pos = 234
@@ -206,22 +199,18 @@ set small_angle = 180
         set osd_pid_yaw_pos = 234
         set osd_pidrate_profile_pos = 234
         set osd_pilot_name_pos = 234
-        set osd_pit_ang_pos = 234
         set osd_power_pos = 234
         set osd_profile_name_pos = 234
         set osd_rate_profile_name_pos = 234
         set osd_rcchannels_pos = 234
         set osd_ready_mode_pos = 234
-        set osd_remaining_time_estimate_pos = 234
-        set osd_rol_ang_pos = 234
         set osd_rsnr_pos = 234
-        set osd_rssi_dbm_pos = 234
-        set osd_rssi_pos = 234
         set osd_rtc_date_time_pos = 234
         set osd_stick_overlay_left_pos = 234
         set osd_stick_overlay_right_pos = 234
         set osd_sys_bitrate_pos = 234
         set osd_sys_delay_pos = 234
+        set osd_sys_distance_pos = 234
         set osd_sys_fan_speed_pos = 234
         set osd_sys_goggle_dvr_pos = 234
         set osd_sys_goggle_voltage_pos = 234
@@ -230,18 +219,33 @@ set small_angle = 180
         set osd_sys_vtx_temp_pos = 234
         set osd_sys_vtx_voltage_pos = 234
         set osd_sys_warnings_pos = 234
-        set osd_tim_1_pos = 234
         set osd_total_flights_pos = 234
         set osd_up_down_reference_pos = 205
-        set osd_vbat_pos = 234
-        set osd_vtx_channel_pos = 234
-        set osd_warnings_pos = 14665
         set osd_wh_drawn_pos = 234
         # eigene Elemente
-        set osd_avg_cell_voltage_pos = 2081
-        set osd_tim_2_pos = 2113
-        set osd_link_quality_pos = 2145
-        set osd_throttle_pos = 2369
-        set osd_sys_distance_pos = 2401
+        set osd_vbat_pos = 2145
+        set osd_rssi_pos = 226
+        set osd_link_quality_pos = 2113
+        set osd_rssi_dbm_pos = 2081
+        set osd_tim_1_pos = 386
+        set osd_tim_2_pos = 2177
+        set osd_remaining_time_estimate_pos = 33
+        set osd_flymode_pos = 374
+        set osd_throttle_pos = 342
+        set osd_vtx_channel_pos = 33
+        set osd_crosshairs_pos = 205
+        set osd_current_pos = 352
+        set osd_mah_drawn_pos = 386
+        set osd_craft_name_pos = 395
+        set osd_home_dist_pos = 98
+        set osd_flight_dist_pos = 130
+        set osd_warnings_pos = 2378
+        set osd_avg_cell_voltage_pos = 44
+        set osd_pit_ang_pos = 97
+        set osd_rol_ang_pos = 65
+        set osd_disarmed_pos = 267
+        set osd_esc_tmp_pos = 163
+        set osd_esc_rpm_pos = 150
+        set osd_core_temp_pos = 278
     #$ OPTION END
 #$ OPTION_GROUP END
