@@ -1196,6 +1196,28 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/2025.12/other/benny_base.txt",
+      "hash": "f126d57e13f1be46a45a8ce0c0ed3c92451bfbb272dc3f428c84d9e31d6e143a",
+      "title": "Benny Base - Modes, Rates, OSD (HD/Analog)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "benny",
+        "base",
+        "modes",
+        "rates",
+        "osd",
+        "hdzero",
+        "analog"
+      ],
+      "author": "Benny",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
       "fullPath": "presets/2025.12/other/blackbox_disable.txt",
       "hash": "88b85f4fcc0dc75355af77a5d5a117e42a678fad18be0891178a437b456e13aa",
       "title": "2025.12 Blackbox disable settings",
@@ -3244,6 +3266,28 @@
         "racing"
       ],
       "author": "sugarK",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2026.6/other/benny_base.txt",
+      "hash": "7786c982232c3cdcee2ea8db713eab7b70edca65cbcc3236b2a2884cf58981af",
+      "title": "Benny Base - Modes, Rates, OSD (HD/Analog)",
+      "firmware_version": [
+        "2026.6"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "benny",
+        "base",
+        "modes",
+        "rates",
+        "osd",
+        "hdzero",
+        "analog"
+      ],
+      "author": "Benny",
+      "force_options_review": true,
       "priority": 0
     },
     {
