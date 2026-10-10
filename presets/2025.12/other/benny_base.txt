@@ -15,7 +15,7 @@
 #$ DESCRIPTION: - VTX PIT MODE – AUX2 oben
 #$ DESCRIPTION: - BEEPER – AUX3 Mitte
 #$ DESCRIPTION: - TURTLE – AUX4 Mitte
-#$ DESCRIPTION: - PREARM – AUX6 oben
+#$ DESCRIPTION: - PREARM – AUX6 oben (eigene Option, bei Whoops abwählen)
 #$ DESCRIPTION:
 #$ DESCRIPTION: Alle anderen Mode-Slots werden geleert.
 #$ DESCRIPTION:
@@ -39,7 +39,7 @@ set small_angle = 180
     aux 1 1 1 1300 1700 0 0
     aux 2 13 2 1300 1700 0 0
     aux 3 35 3 1300 1700 0 0
-    aux 4 36 5 1775 2100 0 0
+    aux 4 0 0 900 900 0 0
     aux 5 39 1 1775 2100 0 0
     aux 6 0 0 900 900 0 0
     aux 7 0 0 900 900 0 0
@@ -55,6 +55,10 @@ set small_angle = 180
     aux 17 0 0 900 900 0 0
     aux 18 0 0 900 900 0 0
     aux 19 0 0 900 900 0 0
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): PREARM auf AUX6 oben (nicht fuer Whoops)
+    aux 4 36 5 1775 2100 0 0
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): Rates (Actual 200/500)
