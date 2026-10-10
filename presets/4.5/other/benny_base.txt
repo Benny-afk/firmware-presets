@@ -4,11 +4,28 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: benny, base, modes, rates, osd, hdzero, analog
 #$ AUTHOR: Benny
-#$ DESCRIPTION: Bennys Standard-Setup fuer jeden Copter: Schalterbelegung (Modes), Rates und OSD. Arming ist bis 180 Grad Neigung erlaubt (small_angle = 180).
+#$ PARSER: MARKED
+#$ DESCRIPTION: Bennys Standard-Setup für jeden Copter: **Modes**, **Rates** und **OSD**.
 #$ DESCRIPTION:
-#$ DESCRIPTION: Modes: ARM = AUX5 Mitte, ANGLE = AUX2 Mitte, VTX PIT MODE = AUX2 oben, BEEPER = AUX3 Mitte, TURTLE = AUX4 Mitte, PREARM = AUX6 oben. Alle anderen Mode-Slots werden geleert.
-#$ DESCRIPTION: Rates: Actual, Center 200 deg/s, Max 500 deg/s, Expo 0 (alle Achsen, aktives Rateprofil).
-#$ DESCRIPTION: OSD: genau EINE Variante waehlen (HD oder Analog). Alle OSD-Elemente werden zurueckgesetzt, dann Zellspannung, Timer, Link Quality, Gas und Distanz links eingeblendet.
+#$ DESCRIPTION: **Immer aktiv:** Arming bis 180° Neigung erlaubt (`small_angle = 180`).
+#$ DESCRIPTION:
+#$ DESCRIPTION: ### Modes
+#$ DESCRIPTION: - ARM – AUX5 Mitte
+#$ DESCRIPTION: - ANGLE – AUX2 Mitte
+#$ DESCRIPTION: - VTX PIT MODE – AUX2 oben
+#$ DESCRIPTION: - BEEPER – AUX3 Mitte
+#$ DESCRIPTION: - TURTLE – AUX4 Mitte
+#$ DESCRIPTION: - PREARM – AUX6 oben
+#$ DESCRIPTION:
+#$ DESCRIPTION: Alle anderen Mode-Slots werden geleert.
+#$ DESCRIPTION:
+#$ DESCRIPTION: ### Rates
+#$ DESCRIPTION: Actual · Center 200 °/s · Max 500 °/s · Expo 0 – alle Achsen, aktives Rateprofil.
+#$ DESCRIPTION:
+#$ DESCRIPTION: ### OSD
+#$ DESCRIPTION: Unter *Optionen* genau **eine** Variante wählen: **HD** oder **Analog**.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Alle OSD-Elemente werden zurückgesetzt, dann links eingeblendet: Zellspannung, Timer, Link Quality, Gas, Distanz.
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
 # Arming bis 180 Grad erlauben

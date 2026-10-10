@@ -1197,7 +1197,7 @@
     },
     {
       "fullPath": "presets/2025.12/other/benny_base.txt",
-      "hash": "f126d57e13f1be46a45a8ce0c0ed3c92451bfbb272dc3f428c84d9e31d6e143a",
+      "hash": "0e151cc53ce2ba0cf951f87961d4cd11ab3441497c6b8d6b85b7a8af69d9e35e",
       "title": "Benny Base - Modes, Rates, OSD (HD/Analog)",
       "firmware_version": [
         "2025.12"
@@ -3270,7 +3270,7 @@
     },
     {
       "fullPath": "presets/2026.6/other/benny_base.txt",
-      "hash": "7786c982232c3cdcee2ea8db713eab7b70edca65cbcc3236b2a2884cf58981af",
+      "hash": "cf36c31160dbaba310225a31a975ddcbadd3d4efd83a1ad04b24b6a1aa2dc753",
       "title": "Benny Base - Modes, Rates, OSD (HD/Analog)",
       "firmware_version": [
         "2026.6"
@@ -10102,7 +10102,7 @@
     },
     {
       "fullPath": "presets/4.5/other/benny_base.txt",
-      "hash": "aea2cb955fa40bc1827bc1809afe7863918d24e759456a26a2cef8c35425a68d",
+      "hash": "cff4bbc90cdca0e420f5b8421d83b8afef0bddcb36c1390bd4b2472700921684",
       "title": "Benny Base - Modes, Rates, OSD (HD/Analog)",
       "firmware_version": [
         "4.5"
